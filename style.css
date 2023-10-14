@@ -1,10 +1,9 @@
 *{
-    color: #c1bed3;
+    color: #877dc2;
 }
 h1{
     padding: 0.5vh;
     margin: 1vh;
-    mix-blend-mode:color-dodge;
 }
 body{
     margin: 0;
@@ -22,8 +21,30 @@ header{
     border-left: 0;
     border-right: 0;
     border-top: 0;
+    box-shadow: 0px 0px 500vh #3d3085;
+    opacity: 70%;
 }
-header div{
+header:hover{
+    opacity: 100%;
+    box-shadow: 0px 0px 500vh #877dc2;
+    .header-text{
+        text-shadow: 0px 0px 2vh white;
+    }
+}
+.header-leftdiv{
+    padding: 1vh;
+    margin: 0.25vh;
+    margin-left: 2vh;
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1.5vh;
+    border-style: solid;
+    border-color: rgb(14, 21, 41);
+}
+.header-rightdiv{
     padding: 1vh;
     margin: 0.25vh;
     margin-bottom: 1vh;
@@ -31,10 +52,6 @@ header div{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 1.5vh;
-    border-style: solid;
-    border-color: rgb(14, 21, 41);
-    background-color: rgb(20, 31, 65);
 }
 .text-glow{
     text-shadow: 0px 0px 2vh white;
@@ -45,8 +62,23 @@ header div{
 .box-glow:hover{
     box-shadow: 0px 0px 10000vh #3d3085;
 }
+.box-shadow{
+    box-shadow: -1px 1px 1vh black;
+}
 .smooth{
     transition-duration: 0.25s;
     transition-property: all;
     transition-delay: 0;
+}
+.header-icon{
+    margin-left: 2vh;
+    margin-right: 2vh;
+    border-radius: 1.5vh;
+    padding: 1vh;
+    scale: 1.25;
+    color: #877dc2;
+}
+.header-icon:hover{
+    text-shadow: 0px 0px 2vh white;
+    scale: 1.5
 }
