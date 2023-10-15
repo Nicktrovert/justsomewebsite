@@ -9,11 +9,31 @@ body{
     margin: 0;
     padding: 0;
     background-color: #010314;
+    height: 100%;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    width: 1vh;
+    border-style: solid;
+    border-color: #010314;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #877dc2, #2f2a4e);
+    border-radius: 15vh;
 }
 header{
     background-color: rgb(16, 23, 44);
+    position:sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     height: 10vh;
     border-style: solid;
     border-color: #464068;
@@ -81,4 +101,54 @@ header:hover{
 .header-icon:hover{
     text-shadow: 0px 0px 2vh white;
     scale: 1.5
+}
+.elements-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.Info-container{
+    margin: 5vh;
+    border-radius: 2vh;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #2f2a4e;
+    background:transparent;
+    width: auto;
+    padding: 5vh;
+}
+.Info-container-text{
+    align-self: center;
+}
+.Info-container-box{
+    transition-duration: 0.5s;
+    opacity: 0%;
+    width: 0vh;
+    height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    font-size: 0;
+}
+.Info-container:hover{
+    border-radius: 6vh;
+    box-shadow: 0px 0px 500vh #877dc2;
+    .Info-container-box{
+        opacity: 100%;
+        transition-duration: 0.5s;
+        width: 50vh;
+        font-size: 110%;
+        height: auto;
+        margin-left: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
