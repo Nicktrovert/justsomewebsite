@@ -140,6 +140,7 @@ header:hover{
 .Info-container:hover{
     border-radius: 6vh;
     box-shadow: 0px 0px 500vh #877dc2;
+    animation: tiltelement 10s ease-in-out infinite;
     .Info-container-box{
         opacity: 100%;
         transition-duration: 0.5s;
@@ -150,5 +151,25 @@ header:hover{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+
+
+@keyframes tiltelement{
+    0%{
+        transform: perspective(400px) rotateX(-5deg) rotateY(-5deg);
+    }
+    25%{
+        transform: perspective(400px) rotateX(-5deg) rotateY(5deg);
+    }
+    50%{
+        transform: perspective(400px) rotateX(5deg) rotateY(5deg);
+    }
+    75%{
+        transform: perspective(400px) rotateX(5deg) rotateY(-5deg);
+    }
+    100%{
+        transform: perspective(400px) rotateX(-5deg) rotateY(-5deg);
     }
 }
